@@ -1,0 +1,48 @@
+{
+  "name": "farvadin.js",
+  "version": "1.0.0",
+  "description": "With the help of this library, you will be able to convert the Gregorian date to solar or vice versa",
+  "homepage": "https://rapidcode.ir",
+  "main": "dist/farvardin.js",
+  "browser": "dist/farvardin.min.js",
+  "module": "dist/farvardin.es.js",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.63.5",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-license": "^0.12.1",
+    "rollup-plugin-uglify": "^4.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w -m inline"
+  },
+  "keywords": [
+    "DateConvertor",
+    "GregorianDate",
+    "SolarDate",
+    "PersianDate"
+  ],
+  "author": {
+    "name": "senior-x-79",
+    "email": "rapidcodeir@gmail.com",
+    "url": "https://rapidcode.ir"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/senior-x-79/farvardin.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/senior-x-79/farvardin.js/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/senior-x-79/farvardin.js/blob/master/LICENSE"
+    }
+  ]
+}
