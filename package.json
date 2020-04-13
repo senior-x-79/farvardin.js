@@ -1,5 +1,6 @@
 {
-  "name": "farvadin.js",
+  "name": "farvardin",
+  "title": "farvardin.js",
   "version": "1.0.0",
   "description": "With the help of this library, you will be able to convert the Gregorian date to solar or vice versa",
   "homepage": "https://rapidcode.ir",

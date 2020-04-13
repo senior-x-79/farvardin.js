@@ -1,4 +1,4 @@
-/*! farvadin.js - v1.0.0 - 2020-04-13
+/*! farvardin.js - v1.0.0 - 2020-04-13
 * https://rapidcode.ir
 * Copyright (c) 2020 senior-x-79; Licensed MIT */
 
