@@ -10,6 +10,7 @@ With the help of this library, you will be able to convert the Gregorian date to
 
 ## usage
 #### Browser
+`npm install farvardin --save`
 ```javascript
 console.log(farvardin.solarToGregorian(1399 , 1 , 25));  // [2020 , 4 , 13]
 console.log(farvardin.solarToGregorian(1399 , 1 , 25 , "array")); // same as above
