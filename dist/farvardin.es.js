@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 /*! farvardin.js - v1.0.2 - 2020-05-13
 * https://rapidcode.ir
 * Copyright (c) 2020 senior-x-79; Licensed MIT */
 
 
+=======
+>>>>>>> b3efc800fd79a0c2942bb6127357a436c7cffd9a
 const farvardin = {
 
     isInvalid(dateYear, dateMonth, dateDay) {
@@ -16,6 +19,10 @@ const farvardin = {
 
     outputToWhich(dateYear, dateMonth, dateDay, type) {
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b3efc800fd79a0c2942bb6127357a436c7cffd9a
         switch (type) {
 
             case "array":
@@ -32,6 +39,10 @@ const farvardin = {
                 const dateMonthLeadZero = (dateMonth < 9) ? "0" + dateMonth : dateMonth;
                 const dateDayLeadZero = (dateDay < 9) ? "0" + dateDay : dateDay;
                 return this.outputToString(dateYear, dateMonthLeadZero, dateDayLeadZero);
+<<<<<<< HEAD
+=======
+                break;
+>>>>>>> b3efc800fd79a0c2942bb6127357a436c7cffd9a
 
         }
         
