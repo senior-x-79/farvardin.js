@@ -1,8 +1,6 @@
 /*! farvardin.js - v1.0.2 - 2020-05-13
 * https://rapidcode.ir
 * Copyright (c) 2020 senior-x-79; Licensed MIT */
-
-
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
@@ -37,6 +35,7 @@
                     var dateMonthLeadZero = dateMonth < 9 ? "0" + dateMonth : dateMonth;
                     var dateDayLeadZero = dateDay < 9 ? "0" + dateDay : dateDay;
                     return this.outputToString(dateYear, dateMonthLeadZero, dateDayLeadZero);
+                    break;
 
             }
         },

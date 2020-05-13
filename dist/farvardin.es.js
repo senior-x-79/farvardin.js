@@ -1,8 +1,7 @@
+
 /*! farvardin.js - v1.0.2 - 2020-05-13
 * https://rapidcode.ir
 * Copyright (c) 2020 senior-x-79; Licensed MIT */
-
-
 const farvardin = {
 
     isInvalid(dateYear, dateMonth, dateDay) {
@@ -32,6 +31,7 @@ const farvardin = {
                 const dateMonthLeadZero = (dateMonth < 9) ? "0" + dateMonth : dateMonth;
                 const dateDayLeadZero = (dateDay < 9) ? "0" + dateDay : dateDay;
                 return this.outputToString(dateYear, dateMonthLeadZero, dateDayLeadZero);
+                break;
 
         }
         
