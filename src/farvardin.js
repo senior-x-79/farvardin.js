@@ -10,6 +10,7 @@ const farvardin = {
     },
 
     outputToWhich(dateYear, dateMonth, dateDay, type) {
+
         switch (type) {
 
             case "array":
@@ -26,10 +27,13 @@ const farvardin = {
                 break;
 
             case "string":
-                return this.outputToString(dateYear, dateMonth, dateDay);
+                const dateMonthLeadZero = (dateMonth < 9) ? "0" + dateMonth : dateMonth;
+                const dateDayLeadZero = (dateDay < 9) ? "0" + dateDay : dateDay;
+                return this.outputToString(dateYear, dateMonthLeadZero, dateDayLeadZero);
                 break;
 
         }
+        
     },
 
     outputToArray(dateYear, dateMonth, dateDay) {
