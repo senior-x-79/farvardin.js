@@ -1,4 +1,4 @@
-/*! farvardin.js - v1.0.0 - 2020-04-13
+/*! farvardin.js - v1.0.2 - 2020-05-13
 * https://rapidcode.ir
 * Copyright (c) 2020 senior-x-79; Licensed MIT */
 
@@ -15,26 +15,26 @@ const farvardin = {
     },
 
     outputToWhich(dateYear, dateMonth, dateDay, type) {
+
         switch (type) {
 
             case "array":
             default:
                 return this.outputToArray(dateYear, dateMonth, dateDay);
-                break;
 
             case "object":
                 return this.outputToObject(dateYear, dateMonth, dateDay);
-                break;
 
             case "json":
                 return this.outputToJson(dateYear, dateMonth, dateDay);
-                break;
 
             case "string":
-                return this.outputToString(dateYear, dateMonth, dateDay);
-                break;
+                const dateMonthLeadZero = (dateMonth < 9) ? "0" + dateMonth : dateMonth;
+                const dateDayLeadZero = (dateDay < 9) ? "0" + dateDay : dateDay;
+                return this.outputToString(dateYear, dateMonthLeadZero, dateDayLeadZero);
 
         }
+        
     },
 
     outputToArray(dateYear, dateMonth, dateDay) {
