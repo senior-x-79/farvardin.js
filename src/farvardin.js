@@ -27,8 +27,8 @@ const farvardin = {
                 break;
 
             case "string":
-                const dateMonthLeadZero = (dateMonth < 9) ? "0" + dateMonth : dateMonth;
-                const dateDayLeadZero = (dateDay < 9) ? "0" + dateDay : dateDay;
+                const dateMonthLeadZero = (dateMonth < 10) ? "0" + dateMonth : dateMonth;
+                const dateDayLeadZero = (dateDay < 10) ? "0" + dateDay : dateDay;
                 return this.outputToString(dateYear, dateMonthLeadZero, dateDayLeadZero);
                 break;
 

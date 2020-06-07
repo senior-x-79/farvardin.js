@@ -1,7 +1,8 @@
-
-/*! farvardin.js - v1.0.2 - 2020-05-13
+/*! farvardin.js - v1.0.2 - 2020-06-07
 * https://rapidcode.ir
 * Copyright (c) 2020 senior-x-79; Licensed MIT */
+
+
 const farvardin = {
 
     isInvalid(dateYear, dateMonth, dateDay) {
@@ -28,10 +29,9 @@ const farvardin = {
                 return this.outputToJson(dateYear, dateMonth, dateDay);
 
             case "string":
-                const dateMonthLeadZero = (dateMonth < 9) ? "0" + dateMonth : dateMonth;
-                const dateDayLeadZero = (dateDay < 9) ? "0" + dateDay : dateDay;
+                const dateMonthLeadZero = (dateMonth < 10) ? "0" + dateMonth : dateMonth;
+                const dateDayLeadZero = (dateDay < 10) ? "0" + dateDay : dateDay;
                 return this.outputToString(dateYear, dateMonthLeadZero, dateDayLeadZero);
-                break;
 
         }
         
